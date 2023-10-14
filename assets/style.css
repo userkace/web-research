@@ -4,13 +4,13 @@
 
 
 :root{
-    --background-color: #121212;
-    --navbar-color: #202020;
+    --background-color: #493e73;
+    --navbar-color: #1D1735;
     --text-color: #fff;
-    --text-color-2: #c9c9c9;
-    --link-hover-bg: #a9a9a9;
-    --link-hover: #121212;
-    --link-active: hsl(21, 98%, 67%);
+    --text-color-2: #e0e0e0;
+    --link-hover-bg: #493e73;
+    --link-hover: #ff8d66;
+    --link-active: #ff8d66;
 }
 html{
     scroll-behavior: smooth;
@@ -50,7 +50,7 @@ nav img{
     float: left;
     height: 2em;
     margin: 0.7em 0 0 1em;
-    border-radius: 100%;
+
 }
 
 /*FOOTER*/
