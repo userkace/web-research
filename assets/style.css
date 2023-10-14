@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
+
+:root{
+    --background-color: #121212;
+    --navbar-color: #202020;
+    --text-color: #fff;
+    --text-color-2: #c9c9c9;
+    --link-hover-bg: #a9a9a9;
+    --link-hover: #121212;
+    --link-active: hsl(21, 98%, 67%);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*NAVIGATION*/
+nav{
+    position: fixed;
+    width: 100vw;
+    background-color: var(--navbar-color);
+    overflow: hidden;
+}
+nav a{
+    color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 1.1em;
+    font-family: 'Gabarito', san-serif;
+}
+nav .links{
+    padding: 1em 0;
+    float: right
+}
+.links ion-icon{
+    margin-right: 0.5em;
+}
+nav a:hover{
+    background-color: var(--link-hover-bg);
+    color: var(--link-hover);
+}
+nav a:active{
+    background-color: var(--link-active);
+    color: var(--text-color);
+}
+nav img{
+    float: left;
+    height: 2em;
+    margin: 0.7em 0 0 1em;
+    border-radius: 100%;
+}
+
+/*FOOTER*/
+footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    background-color: var(--navbar-color);
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+footer .left,
+footer .right{
+    color: var(--text-color);
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 1.1em;
+    padding: 1em;
+    font-family: 'Gabarito', san-serif;
+}
+footer .left{ float: left; }
+footer .right{ float: right; }
+footer .left ion-icon{ margin-left: 0.3em;}
+footer a:hover{
+    background-color: var(--link-hover-bg);
+    color: var(--link-hover);
+}
+footer a:active{
+    background-color: var(--link-active);
+    color: var(--text-color);
+}
+
+/*MAIN*/
+.main{
+    height: max-content;
+    min-height: 80vh;
+    margin: 0;
+    padding: 5em 0;
+}
+.content{
+    margin: 0 7%;
+}
+.content h1,
+.content p{
+    margin: 0;
+    padding: 0;
+}
+.content h1{ font-size: 3em; color: var(--text-color); font-family: 'Young Serif', serif; }
+.content p{ font-size: 1.3em; color: var(--text-color-2); font-family: 'Labrada', serif; 
+text-indent: 50px; padding-top: 1em;}
+
+/*HOME*/
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#home h1,
+#home h2{
+    margin: 0;
+    padding: 0;
+    margin-left: 5%;
+    font-family: 'Young Serif', serif;
+}
+#home h1{ font-size: 5em; color: var(--text-color); }
+#home h2{ font-size: 2em; color: var(--text-color-2); }
+
+/*DISCUSSION*/
+.tables{
+    display: flex;
+    flex-direction: row;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    color: var(--text-color);
+    margin: 1em;
+}
+th,td{
+    border: 1px solid var(--text-color-2);
+    padding: 5px;
+    font-family: 'Labrada', serif
+}
+th{ background-color: var(--navbar-color); }
+.images{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 1em;
+    padding-top: 1em;
+}
+.images img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/*REFERENCE*/
+#reference p{
+    padding-left: 7%;
+    text-indent: -50px;
+}
+
+/*ABOUT*/
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#about img{ height:10em; border-radius: 15%; }
+#about h1,
+#about h2,
+#about p{
+    margin: 0;
+    padding: 0;
+}
+#about h2{ font-size: 1.5em; color: var(--text-color); font-family: 'Young Serif', serif;}
+#about p{ font-size: 1.1em; color: var(--text-color-2); font-family: 'Labrada', serif;
+    text-indent: 50px; padding-top: 1em; margin: 0 10%;}
+#about ul,
+#about li{font-size: 1.1em; color: var(--text-color-2); font-family: 'Labrada', serif;
+    list-style: none; padding: 0; margin: 0 0.5em; display: inline;}
+#about h2{ margin-top: 1em;}
+#about a{ text-decoration: none; color: var(--text-color); }
+#about a:hover{ color: var(--link-active); }
+
+/*RESET*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
