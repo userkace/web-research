@@ -4,7 +4,7 @@
 
 
 :root{
-    --background-color: #493e73;
+    --background-color: linear-gradient(to right, #baa7be 0%, #6d5d77 30%, #775679 50%, #584660 70%, #36223d);
     --navbar-color: #1D1735;
     --text-color: #fff;
     --text-color-2: #e0e0e0;
@@ -155,6 +155,11 @@ th{ background-color: var(--navbar-color); }
     height:100%;
     object-fit:cover;
 }
+.videos{
+    padding-top: 1em;
+    max-width: 100%;
+    margin: 0 auto;
+}
 
 /*REFERENCE*/
 #reference p{
@@ -190,5 +195,5 @@ th{ background-color: var(--navbar-color); }
 body{
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background-image: var(--background-color);
 }
